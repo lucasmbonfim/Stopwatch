@@ -17,9 +17,9 @@ namespace Stopwatch
             Console.WriteLine("Quanto tempo deseja cronometrar?");
 
 
-            string data = Console.ReadLine().ToLower(); //converte pra minusculo 
-            char type = char.Parse(data.Substring(data.Length - 1, 1));//pegando o ultimo caracter 'm' ou 's'
-            int time = int.Parse(data.Substring(0, data.Length - 1));//pegando a quantidade de segundos ou minutos 
+            string data = Console.ReadLine().ToLower(); // convertendo para minusculo 
+            char type = char.Parse(data.Substring(data.Length - 1, 1)); // acessando o ultimo caracter 'm' ou 's'
+            int time = int.Parse(data.Substring(0, data.Length - 1)); // acessando a quantidade de segundos ou minutos 
             int multiplier = 1;
 
             if (type == 'm')
